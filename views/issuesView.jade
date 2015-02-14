@@ -1,0 +1,11 @@
+extends layout.jade
+
+block content
+    h1= issue.title
+    h3
+    div.row
+        div.two.columns
+            a(href= issue.html_url)
+                ="Link to issue"
+    div.row
+        ="Issue status:  " + issue.state

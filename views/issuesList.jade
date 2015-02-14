@@ -1,0 +1,10 @@
+extends layout.jade
+
+block content
+    h1="Issues in NN-Express"
+    h3
+    each item in issues
+        div.row
+            div.two.columns
+                a(href='/issues/view/' + item.id)
+                    = item.title

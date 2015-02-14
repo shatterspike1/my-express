@@ -1,0 +1,11 @@
+extends layout.jade
+
+block content
+    h1= repo.name
+        h3
+        div.row
+            div.two.columns
+            a(href= repo.html_url)
+                ="Link to Website"
+        div.row
+            =repo.description
